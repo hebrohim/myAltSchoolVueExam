@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Kanit:wght@700&display=swap');
+/* 'Kanit', sans-serif;'Kanit', sans-serif; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .centered{
+        @apply flex justify-center items-center
+    }
+    .centered-col{
+        @apply flex justify-center items-start flex-col
+    }
+    .btn{
+        @apply  text-white px-8 py-3 border border-orange-600 text-center text-2xl font-bold rounded-md
+    }
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url('./assets/anime.svg');
+    background-size: cover;
+    font-family: monospace;
+}
+h1,h2,h3{
+    font-family: monospace;
+
+}
+button, .homing{
+    background-color: #ff725e;
+    border: none;
+}
+span{
+    color: #ff725e ;
+}
