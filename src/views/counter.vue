@@ -14,32 +14,35 @@ const { increment, decrement, reset, setValue } = useCounter(num, store)
 </script>
 
 <template>
-    <div>
-        <h1>Counter</h1>
+    <div class = "container">
+        <h1 id = "counterTxt">Counter</h1>
 
         
-                <h1 > {{ count }}</h1>
+                <h1 id= "count" > {{ count }}</h1>
            
 
            
-                    <input type="text" class="h-10 text-black px-2  outline-none in rounded-md  text-2xl" placeholder=" value" v-model="num" />
-                    <button class=" text-2xl to px-3 p-auto rounded-md " @click="setValue(num)">Add</button>
+                    <input id = "userInput" type="text" placeholder=" Enter value here" v-model="num" />
               
 
 
 
-                    <div class="centered mt-6 gap-5">
-                        <button @click="decrement">Decrement</button>
-                        <button @click="reset" >Reset</button>
-                        <button @click="increment" >Increment</button>
+                    <div class="buttonContainer">
+                    <button id = "addBtn" @click="setValue(num)">Add</button>
+                        <button id = "decreaseBtn" @click="decrement">Decrement</button>
+                        <button id = "resetBtn" @click="reset" >Reset</button>
+                        <button id = "increaseBtn" @click="increment" >Increment</button>
+        
                     </div>
-                </div>
          
 
-      
+          </div>  
+          
             <router-link to='/'>
-                Return Home
+              <button id = "returnBtn">Home page</button>
             </router-link>
+
+            
        
     
 </template>

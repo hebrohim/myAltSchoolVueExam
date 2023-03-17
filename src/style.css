@@ -8,11 +8,75 @@
 body {
   background:   linear-gradient(to right,rgba(255, 0, 0, 0.479),rgba(0, 0, 255, 0.411)),url("./banner.jpg");
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.homeSection,.container{
+
+   background-color: rgba(255, 255, 255, 0.295);
+   border-radius: 20px;
+  width: 60vw;
+  height: 50vh;
+  transform: translateY(25vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 
 }
 
-/* .homeSection{
-   background-color: white;
- 
 
-} */
+#welcomeTxt,#counterTxt{
+  font-size: 2.5rem;
+  color: rgb(63, 2, 2);
+  text-shadow: 2px 2px 2px rgba(2, 0, 19, 0.774);
+}
+
+#count{
+  font-size: 5rem;
+  color: rgb(63, 2, 2);
+  text-shadow: 2px 2px 2px rgba(2, 0, 19, 0.774);
+}
+
+.startButton{
+  margin-top: 2rem;
+  padding: .4rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(2, 26, 105, 0.863);
+  color: white;
+  font-weight: bold;
+}
+
+.startButton:hover{
+  background-color: rgba(1, 14, 56, 0.863);
+cursor: pointer;
+}
+
+
+#userInput,#addBtn,#decreaseBtn,#resetBtn,#increaseBtn{
+  font-weight: bold;
+padding: .4rem .7rem;
+text-align: center;
+height: 5vh;
+border-radius: 5px;
+border: 2px solid rgb(61, 1, 1);
+}
+
+
+.buttonContainer{
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5px 5px;
+}
+
+#returnBtn{
+  margin: 0 auto;
+  color: red;
+  position: absolute;
+  top: 0;
+}

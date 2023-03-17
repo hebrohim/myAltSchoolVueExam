@@ -9,7 +9,7 @@ import { RouterLink } from "vue-router";
 <template>
   <section class = "homeSection">
    
-            <h5 >
+            <h5 id = "welcomeTxt">
               Welcome to my Vue counter App
             </h5>
 
