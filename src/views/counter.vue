@@ -43,6 +43,8 @@ const { increment, decrement, reset, setValue } = useCounter(num, store)
             </router-link>
 
             
+
+            
        
     
 </template>
